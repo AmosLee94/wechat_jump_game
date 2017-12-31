@@ -171,7 +171,7 @@ def main():
         save_debug_creenshot(ts, im, piece_x, piece_y, board_x, board_y)
         backup_screenshot(ts)
 
-        time.sleep(random.uniform(1, 5))   # 为了保证截图的时候应落稳了，多延迟一会儿
+        time.sleep(random.uniform(1, 1.2))   # 为了保证截图的时候应落稳了，多延迟一会儿
 
 
 if __name__ == '__main__':
