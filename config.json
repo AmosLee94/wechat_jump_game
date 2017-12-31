@@ -1,6 +1,14 @@
+
 {
     "under_game_score_y": 300, 
     "press_coefficient": 3.705, 
     "piece_base_height_1_2": 20, 
     "piece_body_width": 70
 }
+
+// {
+//     "under_game_score_y": 300, 
+//     "press_coefficient": 1.48, 
+//     "piece_base_height_1_2": 22, 
+//     "piece_body_width": 76
+// }
