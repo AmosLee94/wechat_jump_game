@@ -84,10 +84,12 @@ def set_button_position(im):
 
 def jump(distance):
     press_time = math.pow(distance,0.85) * press_coefficient
-    press_time = max(press_time, press_time_min)   
+    press_time = max(press_time, press_time_min)
+    press_time = int(press_time)
     cmd = 'adb shell input swipe {} {} {} {} {}'.format(swipe_x1, swipe_y1, swipe_x2, swipe_y2, press_time)
     print(cmd)
     os.system(cmd)
+
 
 def find_piece_and_board(im):
     w, h = im.size
