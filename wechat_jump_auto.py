@@ -83,7 +83,7 @@ def set_button_position(im):
 
 def jump(distance):
     press_time = math.pow(distance,0.85) * press_coefficient
-    press_time = max(press_time, 200)   # 设置 200 ms 是最小的按压时间
+    press_time = max(press_time, 220)   # 设置 200 ms 是最小的按压时间
     press_time = int(press_time)
     cmd = 'adb shell input swipe {} {} {} {} {}'.format(swipe_x1, swipe_y1, swipe_x2, swipe_y2, press_time)
     print(cmd)
@@ -155,7 +155,6 @@ def find_piece_and_board(im):
         return 0, 0, 0, 0
 
     return piece_x, piece_y, board_x, board_y
-
 
 def main():
     while True:
